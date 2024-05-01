@@ -14,12 +14,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Add your custom build steps here if needed
-                // For example, running tests or linting
-            }
-        }
     } // Closing brace for stages block
 } // Closing brace for pipeline block
 
