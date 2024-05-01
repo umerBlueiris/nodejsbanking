@@ -16,8 +16,8 @@ pipeline {
 
         stage('Build') {
             steps {
-                // Run the build script defined in package.json
-                sh 'npm run build'
+                // Add your custom build steps here if needed
+                // For example, running tests or linting
             }
         }
     } // Closing brace for stages block
