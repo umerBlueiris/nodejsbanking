@@ -16,8 +16,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-
-   
-    }
-}
+    } // Closing brace for stages block
+} // Closing brace for pipeline block
 
