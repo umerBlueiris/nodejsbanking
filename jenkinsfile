@@ -1,0 +1,23 @@
+pipeline {
+    agent {
+        label 'linux'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/umerBlueiris/nodejsbanking'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh 'npm install'
+                sh 'npm run build'
+            }
+        }
+
+   
+    }
+}
+
