@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/umerBlueiris/nodejsbanking'
+                git 'https://github.com/umerBlueiris/nodejsbanking.git'
             }
         }
 
