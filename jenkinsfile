@@ -4,10 +4,11 @@ pipeline {
     options {
         debug true
     }
+
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/umerBlueiris/nodejsbanking.git'
+                git branch: 'main', url: 'https://github.com/umerBlueiris/nodejsbanking.git'
             }
         }
 
