@@ -8,9 +8,15 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Install Dependencies') {
             steps {
                 sh 'npm install'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                // Run the build script defined in package.json
                 sh 'npm run build'
             }
         }
