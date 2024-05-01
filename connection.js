@@ -20,6 +20,7 @@ app.use(require("./routes/route"));
 //   .catch((err) => {
 //     console.error("Error connecting to database:", err);
 //   });
+console.log(1);
 
 mongoose
   .connect(process.env.MONGO_URI, {
