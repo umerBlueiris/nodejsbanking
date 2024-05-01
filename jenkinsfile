@@ -1,6 +1,9 @@
 pipeline {
     agent any
 
+    options {
+        debug true
+    }
     stages {
         stage('Checkout') {
             steps {
