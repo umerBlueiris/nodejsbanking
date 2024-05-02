@@ -14,12 +14,6 @@ pipeline {
             }
         }
 
-        stage('Start Application') {
-            steps {
-                sh 'npm start'
-            }
-        }
-
         stage('Install PM2') {
             steps {
                 sh 'npm install pm2@latest -g'
