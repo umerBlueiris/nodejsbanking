@@ -14,6 +14,23 @@ pipeline {
             }
         }
 
+        stage('Start Application') {
+            steps {
+                sh 'npm start'
+            }
+        }
+
+        stage('Install PM2') {
+            steps {
+                sh 'npm install pm2@latest -g'
+            }
+        }
+
+        stage('Start Application with PM2') {
+            steps {
+                sh 'pm2 start connection.js' // Replace 'your_app.js' with the entry point of your Node.js application
+            }
+        }
     } // Closing brace for stages block
 } // Closing brace for pipeline block
 
