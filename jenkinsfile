@@ -16,7 +16,7 @@ pipeline {
 
         stage('Install PM2') {
             steps {
-                sh 'npm install pm2@latest -g'
+                sh 'npm install pm2 -g'
             }
         }
 
