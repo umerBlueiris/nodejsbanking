@@ -36,6 +36,6 @@ mongoose
 
 app.listen(process.env.PORT, () => {
   console.log(
-    "This server run at " + process.env.SERVER + ":" + process.env.PORT
+    "This server run at this port runnung " + process.env.SERVER + ":" + process.env.PORT
   );
 });
