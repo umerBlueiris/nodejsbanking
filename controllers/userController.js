@@ -7,7 +7,7 @@ const index = async (req, res) => {
 
     if (smsData.length > 0) {
       res.status(200).json({
-        message: "Sms data successfully fetched",
+        message: "Sms data successfully fetched.",
         result: smsData,
       });
     } else {
